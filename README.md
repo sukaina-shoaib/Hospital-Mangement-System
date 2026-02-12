@@ -1,98 +1,170 @@
-# 🏥 Hospital Management System
+# Hospital Management System
 
-## 📌 Overview
-The **Hospital Management System** is a web-based application designed to streamline hospital operations, including patient appointments, lab tests, doctor management, and treatment records. This system enhances efficiency and improves patient care.
+A web-based Hospital Management System (HMS) developed to digitize hospital operations such as patient management, appointment scheduling, laboratory tests, radiology services, and treatment record maintenance.
+
+This project was developed as part of a Software Engineering course.
+
+## Overview
+
+The Hospital Management System replaces manual hospital record-keeping with a centralized digital platform.
+
+The system provides separate portals for:
+
+* Doctors
+* Patients
+
+It improves operational efficiency, reduces paperwork, and enhances communication between healthcare providers and patients.
+
+## Key Features
+
+### Authentication System
+
+* Secure login functionality
+* Role-based access (Patient / Doctor)
+
+### Appointment Management
+
+* Book appointments
+* View scheduled appointments
+* Cancel appointments
+* Generate token number and receipt
+
+### Lab and Radiology Management
+
+* Request laboratory tests
+* Request CT-Scan, X-Ray, Ultrasound
+* Generate lab reports
+* View test history
+
+### Doctor Panel
+
+* View daily appointments
+* Access patient medical history
+* Record diagnosis
+* Prescribe treatment
+* Schedule follow-up visits
+
+### Physiotherapy Module
+
+* Suggest exercises
+* Track physiotherapy sessions
+* Schedule follow-ups
+
+### Billing System
+
+* Medical bill generation
+* Test bill generation
+* Prescription generation
+
+## Technologies Used
+
+Frontend: HTML, CSS, JavaScript
+Backend: PHP
+Database: MySQL
+Server: Apache (XAMPP)
+Version Control: Git and GitHub
+
+## User Roles
+
+### Patient
+
+* Register and login
+* Book appointments
+* View treatments
+* View laboratory reports
+* Receive prescriptions
+
+### Doctor
+
+* Secure login
+* View appointment list
+* Record diagnosis
+* Prescribe medicines
+* Refer patients for tests or physiotherapy
+* 
+## Documentation
+
+The `documentation/` folder contains the complete academic project report.
+
+It includes:
+
+* Executive Summary
+* Background and Problem Statement
+* Methodology
+* System Analysis and Design
+* UML Diagrams:
+
+  * Use Case Diagrams
+  * Sequence Diagrams
+  * Class Diagram
+  * Object Diagram
+  * Database Diagram
+  * Deployment Diagram
+* Actor Use Case Tables
+* Report Lists
+* Sample Bills (Medical Bill, Test Bill, Prescription)
+* Glossary and UML Symbols
+* References
+
+The documentation follows academic formatting standards and was submitted as part of coursework requirements.
+
+## Installation Guide
+
+### Prerequisites
+
+* Install XAMPP
+* Install Git
+* Use a modern web browser
 
 ---
-## 🚀 Features
-### 🔐 User Authentication
-- Secure login for **patients** and **doctors**.
 
-### 📅 Appointment Management
-- Patients can **book, view, and cancel** appointments with doctors.
+### Step 1: Clone Repository
 
-### 🧪 Lab Test Management
-- Patients can **request lab tests** and **view results** online.
-
-### 👨‍⚕️ Doctor Management
-- Doctors can **manage schedules** and **view patient appointments**.
-
-### 🏥 Treatment Records
-- Doctors can **record and manage** treatment details.
-
-### 🏷️ Patient Management
-- Stores and manages **patient information**, including **medical history** and **personal details**.
-
----
-## 🛠️ Technologies Used
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** PHP
-- **Database:** MySQL
-- **Web Server:** Apache (or any compatible server)
-
----
-## 🔍 User Portals
-### 🏥 1. Patient Portal
-- **Registration & Login**: Secure sign-up and login.
-- **Appointment Booking**: View available doctors and schedule appointments.
-- **Lab Test Requests**: Request lab tests and access results.
-- **Treatment History**: View past treatments and prescribed medications.
-
-### 👨‍⚕️ 2. Doctor Portal
-- **Login**: Secure access to the doctor dashboard.
-- **Appointment Management**: View scheduled appointments.
-- **Treatment Management**: Record patient treatments and manage medical history.
-- **Patient Interaction**: Access patient details and provide medical advice.
-
----
-## 📥 Installation Guide
-### 📌 Prerequisites
-✔ Install **XAMPP** (or any PHP-supported web server).  
-✔ Install a **Code Editor** (VS Code or Sublime Text).  
-✔ Use a **modern web browser** (Chrome, Firefox, Edge).
-
-### 🛠 Step 1: Clone the Repository
 ```bash
-git clone <repository-url>
-cd hospital-management-system
+git clone https://github.com/sukaina-shoaib/Hospital-Mangement-System.git
+cd Hospital-Mangement-System
 ```
 
-### 🛠 Step 2: Create the Database
-1. Open **phpMyAdmin** or any MySQL client.
-2. Import the `Data.php` file to set up the database.
-
-### 🛠 Step 3: Configure Database Connection
-1. Open `Database.php`.
-2. Update the **hostname, username, and password** as per your MySQL server settings.
-
-### 🛠 Step 4: Run the Application
-1. Start the **web server** (XAMPP, WAMP, etc.).
-2. Place the project folder in the **server’s root directory** (`htdocs` for XAMPP).
-3. Open your browser and visit:
-   ```
-   http://localhost/hospital-management-system
-   ```
-
 ---
-## 🎯 Usage
-✅ **Patient Portal**: Register, login, book appointments, and check lab test results.  
-✅ **Doctor Portal**: Manage appointments, record treatments, and interact with patients.
 
----
-## 🎯 Project Goals
-✔ Streamline **hospital operations** and improve service efficiency.  
-✔ Provide a **centralized platform** for managing patient data.  
-✔ Enhance **communication** between doctors and patients.
+### Step 2: Setup Database
 
----
-## 🔮 Future Enhancements
-🚀 **Mobile Application**: A mobile app for easy access.  
-📜 **Prescription Management**: Doctors can send e-prescriptions.  
-📩 **Automated Reminders**: SMS/email notifications for appointments and tests.  
-⭐ **Patient Feedback System**: Improve service through patient feedback.  
-📊 **Advanced Reporting**: Generate analytics reports for hospital performance.  
-🌍 **Multi-language Support**: Cater to diverse patient populations.
+1. Open phpMyAdmin
+2. Import the database file if provided
+   or use Data.php to create tables
 
----
-## 📞 Contact
-For any issues or contributions, feel free to **raise an issue** or **contribute to the project**! 🚀
+### Step 3: Configure Database
+
+1. Open: Database.php
+2. Update the **hostname, username, and password** as per your MySQL server settings if needed.
+
+### Step 4: Run the Project
+
+1. Move the project folder to:
+   C:\xampp\htdocs\
+
+2. Start Apache and MySQL from XAMPP
+
+3. Open browser and visit:
+
+http://localhost/Hospital-Mangement-System
+
+## Project Objectives
+
+* Replace manual hospital record systems
+* Improve patient-doctor communication
+* Reduce administrative workload
+* Provide centralized patient data management
+* Ensure structured hospital workflow
+
+
+## Future Enhancements
+
+* Mobile application version
+* SMS and email notifications
+* Online payment integration
+* Admin dashboard with analytics
+* Advanced security and data encryption
+* AI-based diagnostic assistance
+
+
