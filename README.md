@@ -148,6 +148,7 @@ cd Hospital-Mangement-System
 3. Open browser and visit:
 
 http://localhost/Hospital-Mangement-System
+or directly run login.php file
 
 ## Project Objectives
 
